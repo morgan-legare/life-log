@@ -13,30 +13,9 @@ int main() {
 		int input = getMenuInput();					
 		switch (input) {
 			case ENTER_JOURNAL:
-				aJournal.printJMenu();	
+				aJournal.printJMenu(numEntries);	
 				j = aJournal.getJMenuInput();
-				/*while(!valid) {
-					bool flag = true;
-					if(j > 0 || j < 11) {
-						switch (j) {
-						//entries	
-						}	
-					}
-					else if(j == 0 || j == 11) {
-						switch (j) {
-							case 0:
-								cout << "prev page";	
-							case 11:
-								cout << "next page";		
-						}
-					}
-					else {
-						cout << "\nNOT A VALID ENTRY. "
-							"PLEASE TRY AGAIN\n";
-						flag = false;
-					}
-					flag ? valid = true : valid = false;
-				}*/
+				
 			case ENTER_LIST:
 				cout << "LIST" << endl;
 				break;

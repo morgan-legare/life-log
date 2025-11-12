@@ -18,7 +18,7 @@ const int QUIT = 3;
 // VARIABLES:
 bool run = true;
 int j = 0;
-bool valid = false;
+int numEntries = 0;
 
 // FUNCTIONS:
 

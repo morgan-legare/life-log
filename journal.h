@@ -8,7 +8,7 @@ class Journal {
 	public:
 	Journal();
 	~Journal();		
-	void printJMenu();
+	void printJMenu(int numEntries);
 	int getJMenuInput();
 	private:
 	
