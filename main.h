@@ -17,6 +17,8 @@ const int QUIT = 3;
 
 // VARIABLES:
 bool run = true;
+int j = 0;
+bool valid = false;
 
 // FUNCTIONS:
 
@@ -34,7 +36,7 @@ void printMainMenu() {
 int getMenuInput() {
 	int input = 0;
 	while(input < 1 || input > 3) {
-		cout << "\n ENTER CHOICE (1-3): ";
+		cout << "\nENTER CHOICE (1-3): ";
 		cin >> input;
 	}
 	return input;
