@@ -2,16 +2,14 @@
 #ifndef JOURNAL_H
 #define JOURNAL_H
 #include <iostream>
-
+#include <fstream>
+#include "table.h"
+using namespace std;
 
 class Journal {
 	public:
-	Journal();
-	~Journal();		
 	void printJMenu(int numEntries);
 	int getJMenuInput();
-	private:
-	
 };
 
 

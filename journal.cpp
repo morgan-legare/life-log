@@ -1,16 +1,9 @@
 // Written by Morgan Legare
 #include <iostream>
+#include <fstream>
 #include "journal.h"
+#include "table.h"
 using namespace std;
-
-Journal::Journal() {
-
-}
-
-Journal::~Journal() {
-
-}
-
 
 
 void Journal::printJMenu(int numEntries) {
@@ -38,3 +31,22 @@ int Journal::getJMenuInput() {
 	return input;
 }
 	
+
+int Journal::runJMenu(int input);
+	if(input == 0) {
+		cout << "PREV";
+		return 0;
+	}
+	else if(input == 11) {
+		cout << "NEXT";
+		return 0;
+	}
+	else if (input > 0 && input < 11) {
+		//entries
+		return 0;
+	}
+	else {
+		cout << "\nERROR ENTER CHOICE (0-11)!\n";
+		return -1;
+	}
+}
